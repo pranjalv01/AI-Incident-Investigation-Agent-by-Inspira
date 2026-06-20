@@ -35,18 +35,12 @@ The agent is designed to accelerate investigations, improve analyst consistency,
 • Microsoft Defender Threat Intelligence access (recommended)
 
 • Required Security Copilot skillsets enabled:
-
-Generic
-
-Fusion
-
-Sentinel
-
-M365
-
-Defender Threat Intelligence
-
-Entra ID
+a. Generic
+b. Fusion
+c. Sentinel
+d. M365
+e. Defender Threat Intelligence
+f. Entra ID
 
 • Read permissions to Microsoft Sentinel incidents and related telemetry
 
@@ -78,21 +72,21 @@ Step 2: Install the Agent
 
 Step 3: Grant Required Permissions
 
-Approve all permissions requested during installation.
+• Approve all permissions requested during installation.
 
-Ensure access exists to:
+• Ensure access exists to:
 
-Microsoft Sentinel
+a. Microsoft Sentinel
 
-Microsoft Defender XDR
+b. Microsoft Defender XDR
 
-Microsoft Entra ID
+c. Microsoft Entra ID
 
-Defender Threat Intelligence
+d. Defender Threat Intelligence
 
-Required Security Copilot skillsets
+e. Required Security Copilot skillsets
 
-Verify that the user or service principal has read permissions.
+f. Verify that the user or service principal has read permissions.
 
 Step 4: Sign In with an Authorized User
 
@@ -188,11 +182,11 @@ Accepted values:
 
 • Microsoft Defender XDR Incident ID
 
-The agent validates the IncidentId before execution.
+a. The agent validates the IncidentId before execution.
 
-The user does not need to specify the source platform.
+b. The user does not need to specify the source platform.
 
-How the Agent Works
+# How the Agent Works
 
 The AI Incident Investigation Agent performs automatic source detection.
 
@@ -246,45 +240,14 @@ The agent performs:
 
 Every successful execution produces a structured investigation report containing:
 
-Executive Summary
-Incident Snapshot
-Attack Progression
+1. Executive Summary
+2. MITRE ATT&CK Coverage
+3. Critical Evidence
+4. Attack Timeline
+5. Final Verdict
 
-Initial Compromise
 
-Malware Execution
-
-Credential Theft
-
-Persistence
-
-Lateral Movement
-
-Exfiltration
-
-Defense Evasion
-
-Impact Assessment
-Threat Intelligence Enrichment
-MITRE ATT&CK Coverage
-Critical Evidence
-Attack Timeline
-P1, P2, and P3 Response Actions
-Manager Summary
-Final Verdict
-Verdict Types
-
-The agent classifies incidents into one of the following categories:
-
-• True Positive – Active Breach
-
-• True Positive – Likely Malicious
-
-• False Positive – Suspicious but Benign
-
-• False Positive – Confirmed Benign
-
-Security and Architecture Guardrails
+# Security and Architecture Guardrails
 
 • Read-Only Enforcement: The agent never creates, modifies, or deletes incidents, tasks, comments, analytics rules, or playbooks.
 
@@ -298,7 +261,7 @@ Security and Architecture Guardrails
 
 • Safe Production Architecture: The agent is suitable for enterprise production environments.
 
-Supported Use Cases
+# Supported Use Cases
 
 • Microsoft Sentinel incident investigation
 

@@ -6,7 +6,7 @@ The agent behaves like an experienced L3/L4 SOC analyst by applying evidence-bas
 
 The agent is designed to accelerate investigations, improve analyst consistency, reduce manual effort, and support Security Copilot, incident response, and SOC automation workflows.
 
-Business Requirements
+# Business Requirements
 
 • Standardized Investigation Workflow for SOC Operations: The agent provides a consistent and repeatable investigation process for Microsoft Sentinel and Microsoft Defender XDR incidents, reducing analyst-to-analyst variance and improving operational consistency across L1, L2, and L3 SOC teams.
 
@@ -20,7 +20,7 @@ Business Requirements
 
 • SOC Modernization with AI: The solution enables organizations to augment SOC operations using AI-driven workflows without disrupting existing investigation processes.
 
-Prerequisites
+# Prerequisites
 
 • An active Microsoft Security Copilot environment
 
@@ -54,7 +54,7 @@ Entra ID
 
 • Appropriate Security Copilot workspace permissions
 
-Setup Guide
+# Setup Guide
 
 The following steps describe how to deploy and configure the AI Incident Investigation Agent.
 
@@ -130,7 +130,7 @@ Step 6: Complete Configuration
 
 • Confirm that the agent is enabled.
 
-Running the Agent
+# Running the Agent
 Option 1: Manual Execution
 
 • Open AI Incident Investigation Agent.
@@ -169,7 +169,7 @@ Option 2: Trigger-Based Execution
 
 • Save configuration.
 
-Supported integrations include:
+# Supported integrations include:
 
 • Logic Apps
 
@@ -179,7 +179,7 @@ Supported integrations include:
 
 • Event-driven Security Copilot workflows
 
-Input Requirements
+# Input Requirements
 IncidentId (Required)
 
 Accepted values:
@@ -206,7 +206,7 @@ The AI Incident Investigation Agent performs automatic source detection.
 
 • If neither source contains the incident, a standardized not-found response is returned.
 
-Investigation Workflow
+# Investigation Workflow
 
 The agent performs:
 
@@ -242,7 +242,7 @@ The agent performs:
 
 • Recommendation generation
 
-Output Structure
+# Output Structure
 
 Every successful execution produces a structured investigation report containing:
 
